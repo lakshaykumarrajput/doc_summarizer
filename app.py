@@ -9,7 +9,7 @@ import requests
 app = flask.Flask(__name__)
 CORS(app)
 
-HF_API_TOKEN = "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"
+HF_API_TOKEN = "Bearer hf_j******************************NKe"
 
 headers = {
     "Authorization": f"Bearer {HF_API_TOKEN}"
@@ -19,7 +19,7 @@ headers = {
 API_URL = "https://router.huggingface.co/hf-inference/models/facebook/bart-large-cnn"
 
 headers = {
-    "Authorization":  "Bearer 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",
+    "Authorization":  "Bearer hf_j******************************NKe",
     "Content-Type": "application/json"
 }
 
@@ -55,7 +55,7 @@ def extract_text(file):
 def summarize_text(text):
     API_URL = "https://router.huggingface.co/hf-inference/models/facebook/bart-large-cnn"
     headers = {
-        "Authorization": "Bearer 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",
+       "Authorization":  "Bearer hf_j******************************NKe",
         "Content-Type": "application/json"
     }
 
@@ -101,7 +101,7 @@ from openai import OpenAI
 def answer_question(question, context):
 
     client = OpenAI(
-        api_key="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",
+        api_key =   "gsk_*******************************LLG",
         base_url="https://api.groq.com/openai/v1"
     )
 
